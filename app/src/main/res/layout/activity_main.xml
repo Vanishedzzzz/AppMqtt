@@ -1,35 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Campo para mostrar mensajes recibidos -->
-    <TextView
-        android:id="@+id/tvMessages"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#EFEFEF"
-        android:padding="8dp"
-        android:scrollbars="vertical"
-        android:text="Mensajes recibidos aparecerán aquí..."
-        android:textSize="16sp" />
-
-    <!-- Campo de entrada para el mensaje -->
     <EditText
-        android:id="@+id/etMessage"
+        android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escribe un mensaje"
-        android:padding="8dp" />
+        android:hint="Ingrese el Mensaje"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
 
-    <!-- Botón para enviar el mensaje -->
     <Button
-        android:id="@+id/btnSend"
+        android:id="@+id/buttonSend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enviar mensaje" />
+        android:text="Enviar a MQTT" />
 
 </LinearLayout>
